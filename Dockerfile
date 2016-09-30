@@ -7,6 +7,6 @@ ADD index.php /var/www//miguel.com/
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN chown -R www-data:www-data /var/www/miguel.com
 RUN chmod -R 755 /var/www
-RUN a2ensite example.com.conf
+RUN a2ensite miguel.com.conf
 RUN a2dissite 000-default.conf
 RUN service apache2 restart
